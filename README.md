@@ -1,2 +1,2 @@
 # 3D-Printer-station
-web based slicer and modular 3D printer management
+Web based slicer and modular 3D printer management software.
