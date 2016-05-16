@@ -1,0 +1,11 @@
+{
+
+  "stl":"uuid2",
+  "gcode":"uuid3",
+  "finished":"true",
+
+  "baseSettings": "high",
+  "customSettings": {
+
+  }
+}
