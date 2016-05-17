@@ -1,12 +1,12 @@
 var app = require('express')()
-    // .use(siofu.router)
-    //     .listen(3000);
-var uuid = require('uuid');
-var exec = require("child_process").exec;
-var siofu = require("socketio-file-upload");
-var folder = uuid.v4();
-var stl = uuid.v4();
-var gcode = uuid.v4();
+   .use(siofu.router)
+     .listen(5000);
+var uuid = require('uuid')
+var exec = require("child_process").exec
+var siofu = require("socketio-file-upload")
+var folder = uuid.v4()
+var stl = uuid.v4()
+var gcode = uuid.v4()
 
 app.engine('pug', require('pug').__express);
 app.get('index', function(req,res){
