@@ -13,19 +13,20 @@ app.get('index', function(req,res){
   res.render("index.pug")
 })
 /*var command = "cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\n"
-command += "slic3r-console.exe\n"
-command += "slic3r teensy.stl --output slic3r-mswin-x64-1-2-9a-stable/Slic3r"
-*/
-//cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\nslic3r-console.exe\nslic3r teensy.stl --output slic3r-mswin-x64-1-2-9a-stable/Slic3r
+    /*var command = "cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\n"
+    command += "slic3r-console.exe\n"
+    command += "slic3r teensy.stl --output slic3r-mswin-x64-1-2-9a-stable/Slic3r"
+     console.log(command);*/
+    //console.log("cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\nslic3r-console.exe\nslic3r teensy.stl --output slic3r-mswin-x64-1-2-9a-stable/Slic3r");
 exec("cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\nslic3r-console.exe\nslic3r teensy.stl --output slic3r-mswin-x64-1-2-9a-stable/Slic3r", function(err, out) {
     if (err) {
-        throw err;
+        throw err
     }
 
-    console.log("finished");
-    console.log(out);
+    console.log("finished")
+    console.log(out)
 })
 
-app.listen(3000, () => {
-    console.log('3D printer station is listening on port 3000')
+app.listen(5000, () => {
+    console.log('3D printer station is listening on port 5000')
 })
