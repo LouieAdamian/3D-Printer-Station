@@ -8,9 +8,9 @@ var folder = uuid.v4()
 var stl = uuid.v4()
 var gcode = uuid.v4()
 
-app.engine('pug', require('pug').__express);
-app.get('index', function(req,res){
-  res.render("index.pug")
+app.set('view engine', 'pug');
+app.get('/', function(req, res) {
+  res.render("index")
 })
 /*var command = "cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\n"
     /*var command = "cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\n"
