@@ -4,17 +4,17 @@ head
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=no")
 body
-    .page-wrapper
-        .header-wrapper
-            .logotype-wrapper
-            img(src="/logos/nuvu_logo_twitter.jpg", alt="nuvu_logo_twitter")
-        .slicer-wrapper
-            .viewer
-            .settings-wrapper
-                .job-field
-                .name-field
-        .table-wrapper
-            table.queue
+    #page-wrapper
+        #header-wrapper
+            #logotype-wrapper
+            img(src="logos/nuvu_logo_twitter.jpg", alt="nuvu_logo_twitter")
+        #slicer-wrapper
+            #viewer 
+            #settings-wrapper
+                #job-field
+                #name-field
+        #table-wrapper
+            table("Queue")
                 thead
                 tr
                     td job
@@ -22,3 +22,14 @@ body
                     td eta
                 tbody
                     tbody
+                      tr
+                        td 3d printing a 3d printer
+                        td Louie Adamian
+                        td 6hrs 59mins 59secs
+                      tr
+                        td Sam Daizman
+                        td Sam Daizman
+                        td 24hrs 59mins 59secs
+                      tr
+        #bottom-wrapper
+          p NuVu print is a software that allows you to quickly print bassed on priority and print time.
