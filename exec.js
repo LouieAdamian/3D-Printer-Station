@@ -1,6 +1,5 @@
 var app = require('express')()
     //  .use(siofu.router)
-    //    .listen(5000);
 var uuid = require('uuid')
     // var fs = require('fs.extra')
 var mkdirp = require('mkdirp')
@@ -12,9 +11,10 @@ app.get('/', function(req, res) {
 })
 app.listen(2001, () => {
     console.log('3D printer station is listening on port 2001')
+    console.log("go to localhost:2001");
 })
 
-function upload(stl, ) {
+function upload(stl) {
     var path = __dirname + "/jobs/"
     var stluuid = uuid.v4()
     var jobuuid = uuid.v4()
@@ -35,7 +35,7 @@ function upload(stl, ) {
         }
     })
 
-} * /
+}
 
 function loadViewer() {
 
@@ -55,11 +55,6 @@ function Slice(stl, Bsettings, Csettings) {
 }
 
 function addJob2Q() {
-    var place =
-    var Q = document.getElementById("Queue")
-    var row = Q.insertRow(place)
-    var job = row.insertCell(1)
-    var name = row.insertCell(2)
-    var time = row.insertCell(3)
+
 
 }
