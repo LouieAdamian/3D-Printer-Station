@@ -55,15 +55,11 @@ function Slice(stl, Bsettings, Csettings) {
 }
 
 function addJob2Q() {
-  var place = 
-  var job =
-  var name =
-  var time =
-    var Queue = document.getElementById("Queue")
-    var row = Queue.insertRow(place)
-
-
-
-
+    var place =
+    var Q = document.getElementById("Queue")
+    var row = Q.insertRow(place)
+    var job = row.insertCell(1)
+    var name = row.insertCell(2)
+    var time = row.insertCell(3)
 
 }
