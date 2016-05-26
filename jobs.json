@@ -1,7 +1,4 @@
-jobs/uuid0
- uuid1.stl
- uuid2gcode
---load slic3r-config-PLA.ini --first-layer-temperature 215
+
 
 "Jobs": [
 {
