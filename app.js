@@ -11,6 +11,7 @@
       res.render("index");
   })
 
+<<<<<<< HEAD
   var uploader = new siofu();
   uploader.dir = "/path/to/save/uploads";
 
@@ -37,6 +38,31 @@
           }
       })
   }
+=======
+  app.listen(2001, () => {
+      console.log('3D printer station is listening on port 2001');
+  })
+
+  function upload(stl) {
+      var path = __dirname + "/jobs/"
+      var stluuid = uuid.v4();
+      var jobuuid = uuid.v4();
+      var gcodeuuid = uuid.v4();
+      var folder = path + jobuuid + '/'
+      fs.mkdirs(folder, function(err) {
+          if (err) {
+              console.log(err);
+          }
+      })
+      var fileloc = folder.concat(stluuid)
+      fs.copy(fileloc + ".stl", function(e) {
+          if (e) {
+              console.log(e);
+          }
+      })
+  }
+
+>>>>>>> origin/master
 
 io.on("connection",function(socket){
   var uploader = new siofu();
@@ -44,18 +70,28 @@ io.on("connection",function(socket){
   uploader.listen(socket)
 
 
+<<<<<<< HEAD
 })
 
 
   function Slice(stl, Bsettings, Csettings) {
       exec("cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\nslic3r-console.exe" + "Slic3r " + stlUUID + ".stl " + "--load " + Bsettings + Csettings, function(err) {
+=======
+  function Slice(stl, Bsettings, Csettings) {
+      exec("cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\nslic3r-console.exe" + "Slic3r " + stluuid + ".stl " + "--load " + Bsettings + Csettings, function(err) {
+>>>>>>> origin/master
           if (err) {
               throw err;
           }
       })
   }
 
+<<<<<<< HEAD
   function priorityUtility(Importance, added, time, jobUUID) {
       var prio = (importace - added) / time;
+=======
+  function priorityUtility(Importance, added, time, jobuuid) {
+      var prio = (importace - added)/ time;
+>>>>>>> origin/master
       return jobuuid.prio;
   }
