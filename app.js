@@ -11,7 +11,6 @@
       res.render("index");
   })
 
-  << << << < HEAD
   var uploader = new siofu();
   uploader.dir = "/path/to/save/uploads";
 
@@ -42,28 +41,20 @@
   io.on("connection", function(socket) {
       var uploader = new siofu();
       uploader.dir = "/upload";
-      uploader.listen(socket)
+      uploader.listen(socket);
 
-
-      << << << < HEAD
   })
 
-
   function Slice(stl, Bsettings, Csettings) {
-      exec("cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\nslic3r-console.exe" + "Slic3r " + stlUUID + ".stl " + "--load " + Bsettings + Csettings, function(err) { === === =
-                  function Slice(stl, Bsettings, Csettings) {
-                      exec("cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\nslic3r-console.exe" + "Slic3r " + stluuid + ".stl " + "--load " + Bsettings + Csettings, function(err) { >>> >>> > origin / master
-                          if (err) {
-                              throw err;
-                          }
-                      })
-                  }
+      exec("cd C:/Users/louieadamian/Documents/slic3r-mswin-x64-1-2-9a-stable/Slic3r\nslic3r-console.exe" + "Slic3r " + stlUUID + ".stl " + "--load " + Bsettings + Csettings, function(err) {
+          if (err) {
+              console.log(err);
+          }
 
-                  << << << < HEAD
+      })
+  }
 
-                  function priorityUtility(Importance, added, time, jobUUID) {
-                      var prio = (importace - added) / time; === === =
- function priorityUtility(Importance, added, time, jobuuid) {
-     var prio = (importace - added) / time; >>> >>> > origin / master
-     return jobuuid.prio;
- }
+  function priorityUtility(Importance, added, time, jobuuid) {
+      var prio = (importace - added) / time;
+      return jobuuid.prio;
+  }
