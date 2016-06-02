@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var app = require('express')();
 var Queue = [1, 2];
 //use(siofu.router);
