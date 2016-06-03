@@ -1,2 +1,2 @@
 # NuVu Print
-Web based slicer and modular 3D printer management software.
+archived https://github.com/NuVu-Print/NuVu-print-coord
